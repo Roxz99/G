@@ -172,7 +172,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     attack_in_progress = True
 
     try:
-        command = f"./uu {ip} {port} {duration} {6} {921}"
+        command = f"./uu {ip} {port} {duration} {4} {9} {921} {8}"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
